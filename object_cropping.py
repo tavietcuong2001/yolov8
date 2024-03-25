@@ -24,5 +24,3 @@ if boxes is not None:
         crop_obj = im0[int(box[1]):int(box[3]), int(box[0]):int(box[2])]
 
         cv2.imwrite(os.path.join(crop_dir_name, str(idx)+".png"), crop_obj)
-
-cv2.imwrite(os.path.join(crop_dir_name, "image.png"), im0)
